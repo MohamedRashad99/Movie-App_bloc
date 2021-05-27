@@ -12,7 +12,7 @@ class MovieItemWidget extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: ListTile(
         leading: Image.network(movie.poster),
-        title: Text(movie.title),
+        title: Text(movie.title,style: TextStyle(fontWeight: FontWeight.bold,),),
         subtitle: Text(movie.overview),
         trailing: Text(movie.date),
       ),
